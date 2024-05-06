@@ -1,11 +1,12 @@
 ### AWS Automated Centralized Multi Account Patching
 This is a walkthrough on the steps needed to set up the Systems Manager Management Account and Target accounts for Patching.
 
-  - [Setup Resource Groups to Logically Group your Managed Instances](#setup-resource-groups-to-logically-group-your-managed-instances)
-  - [Setup the Required IAM permissions on Management account](#setup-the-required-iam-permissions-on-management-account)
-  - [Create an Automation Document to Execute Patch Baselines](#create-an-automation-document-to-execute-patch-baselines)
-  - [Execute Automation to Patch Multi Account Resources](#execute-automation-to-patch-multi-account-resources)
-  - [Schedule Event Bridge Invocation during Patching Window](#schedule-event-bridge-invocation-during-patching-window)
+- [Setup Resource Groups to Logically Group your Managed Instances](#setup-resource-groups-to-logically-group-your-managed-instances)
+- [Setup the Required IAM permissions on Management account](#setup-the-required-iam-permissions-on-management-account)
+- [Setup the Required IAM permissions on Target account](#setup-the-required-iam-permissions-on-target-account)
+- [Create an Automation Document to Execute Patch Baselines](#create-an-automation-document-to-execute-patch-baselines)
+- [Execute Automation to Patch Multi Account Resources](#execute-automation-to-patch-multi-account-resources)
+- [Schedule Event Bridge Invocation during Patching Window](#schedule-event-bridge-invocation-during-patching-window)
 
 
 ![Architecture Design](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5d298395ezg12xdcay7z.png)
